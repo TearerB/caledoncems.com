@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.contain{
+    background:#4969e1;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+.myslide{display: none;}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.numbertext{
+    color:#f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 0;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active{background-color: #717171;}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@media only screen and (max-width: 300px){
+    .text{font-size: 11px;}
+}
+
+
+
+
+
+
+
+
+
+.header{
+    position: fixed;
+    background: #1d2026;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+   
+}
+nav .menu{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav .logo{
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+    top: 8px;
+    left: 30px;
+}
+.log {
+    position: absolute;
+    float: left;
+    left: 160px;
+    height: 38px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+    
+
+}
+.log a{
+    text-decoration: none;
+    color: #4969e1;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+header nav ul li a:hover, header nav ul li a.active{
+    color: var(--gold);
+    text-decoration: none;   
+}
+
+
+p{
+    position: absolute;
+    top: 140px;
+    font-size: 40px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    left: 70px;
+    color: #fec773;
+}
+
+.logo2{
+    position:relative;
+    top: 130px;
+    left: 120px;
+    width: 200px;
+    
+}
+
+.homepic{
+    position: absolute;
+    width: 812px;
+    top: 70px;
+    right: 0px;
+    
+}
+
+.text-container{
+    position: absolute;
+    bottom:30px;
+    text-align: center;
+    left: 700px;  
+    text-decoration: wavy; 
+}
+
+.text-container button{
+    background: #efefef;
+    height: 30px;
+    width: 90px;
+    font-weight: bold;
+    padding: 4px;
+    color: #00986f;
+}
+
+.text-container button:hover{
+    background: gold;
+    color: #fff;
+    opacity: 0.9;
+} 
+
+/* !!About Us section */
+
+.top{
+    position: relative;
+    background: #1d2026;
+    height: 80px;
+    width: 100%;
+    padding: 20px 80px;
+   
+}
+#about .top h2{
+    text-align: center;
+    color: #fff;
+}
+#about .top ul li{
+    display: inline-block;
+    list-style-type: none;
+    color: #fff;
+}
+#about .top ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#introduction{
+    position: relative;
+    padding: 20px 80px;
+    text-align: justify;
+}
+#introduction h2{
+    text-align: center;
+    color: #4969e1;
+}
+.about{
+    position: relative;
+    padding: 20px 80px;
+    text-align: justify;
+}
+.about-header{
+    text-align: center;
+}
+    
+.about-descrioption p{
+    position: relative;
+    text-align: justify;
+    width: 49%;
+    float: left;
+    left: 0px;
+    top: 20px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+}
+.about-descrioption-img .graduates{
+    position: relative;
+    padding: 20px 0px;
+    width: 50%;
+    float: right;
+}
+#what-we-do{
+    position: relative;
+    padding: 20px 80px;
+    top: 120px;
+}
+
+.what-top{
+    position: relative;
+    background: #1d2026;
+    height: 80px;
+    width: 100%;
+    top: 360px;
+    padding: 20px 80px;
+     
+}
+
+.what-top h2{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 25px;
+    text-align: center;
+}
+
+.pre-school{
+    position: relative;
+    top: 20px;
+}
+.primary{
+    position: relative;
+    top: 40px;
+}
+.uniform{
+    position: relative;
+    top: 60px;
+}
+
+/* --------------------------------
+|   footer
+---------------------------------*/
+#footer{
+    position: relative;
+    text-align: center;
+    padding:18px;
+    background: #1d2026;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    bottom: -160px;
+}
+.face{
+    position: relative;
+    float: right;
+    bottom: 25px;
+    
+}
+
+/* --------------------------------
+|   registration style
+---------------------------------*/
+
+#registration .top{
+    position: relative;
+    background: #414650;
+    height: 80px;
+    width: 100%;
+    padding: 20px 80px;
+    top: 70px;
+   
+}
+#registration .top h2{
+    text-align: center;
+    color: #fff;
+}
+#registration .top ul li{
+    display: inline-block;
+    list-style-type: none;
+    color: #fff;
+}
+ 
+#registration .top ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#register{
+    position: relative;
+    padding: 20px 80px;
+    top: 70px;
+}
+.admission-date{
+    color: red;
+}
+
+.left-fees{
+    position: absolute;
+    float: left;
+    top: 90px;
+}
+.primary-school-fees{
+    position: absolute;
+    right: 50%;
+    top: 117px;
+}
+.fees-per-quarter{
+    position: relative;
+    top: 150px;
+    
+}
+.fees-table{
+border-left: 1px solid black;
+border-bottom: 1px solid black ;
+border-top: 1px solid black ;
+border-right: 1px solid black;
+text-align: center;
+}
+.fees-table td{
+    border-left: 1px solid black;
+   
+    
+}
+.fees-table th{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.download-prospectus{
+    position: relative;
+    top: 180px;
+  
+}
+.btn{
+    display: block;
+    background: #fff;
+    color: green;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #4969e1;
+    border-radius: 3px;
+    padding: 4px 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 30%;
+    height: 40px;
+} 
+.btn:hover{
+    background: #4969e1;
+    color: #fff;
+    opacity: 0.9;
+} 
+
+.fees-bank-account{
+    position: relative;
+    top: 220px;
+    
+}
+.school-hours{
+    position: relative;
+    top: 260px;
+}
+.fees-per-quarter .heading{
+    color: gold;
+    border-bottom: 5px solid #4969e1;
+    font-size: larger;
+    
+}
+.fees-table{
+    width: 60%;
+   
+}
+.school-calendar{
+    position: relative;
+    top: 300px;
+}
+
+/* --------------------------------
+|  End of registration style footer
+---------------------------------*/
+#reg-footer{
+    position: relative;
+    text-align: center;
+    padding:18px;
+    background: #1d2026;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    bottom: -400px;
+}
+
+/* --------------------------------
+|   Contacts
+---------------------------------*/
+
+#contact{
+    position: relative;
+    padding: 20px 80px;
+    top: 70px;
+}
+.container{
+    position: relative;
+   
+}
+.contact-header{
+    position: relative;
+    text-align: center;
+    font-size: larger;
+}
+.contact-info-container{
+    position: relative;
+    font-size: larger;
+    top: 20px;
+}
+
+.contact-info-content{
+    width: 45%;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.contact-info-content h5{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-info-details{
+    padding: 0px 40px;
+    
+}
+.contact-info-details a{
+   
+    text-decoration: none;
+    
+}
+.map-container{
+    position: absolute;
+    right:0px;
+    top: 70px;
+    width: 52%;
+}
+.face{
+    position: absolute;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration:none;
+    bottom: 5px;
+    right: 2%;
+    background: #1d2026;
+    color: #4969e1;
+    border: 2px solid #55acee;
+}
+.face:hover{
+    background: #55acee;
+    color:white;
+    
+}
+
+#contact-footer{
+    position: relative;
+    text-align: center;
+    padding:18px;
+    background: #1d2026;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    bottom: -90px;
+}
+
+/* --------------------------------
+|   End of Contacts
+---------------------------------*/
+
+/* --------------------------------
+|   Latest
+---------------------------------*/
+
+#updates{
+    position: relative;
+    padding: 20px 60px;
+    top: 70px;
+}
+.text{
+    width: 380px;
+    height: 250px;
+    background: #414650;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: xx-large;
+    font-family: 'cooper' sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+a .text{
+ 
+    text-decoration: none;
+    color: black;
+}
+.text a:hover{
+    text-decoration: none;
+    color: white;
+}
+.text:hover{
+
+    background: #4969e1;
+    color: #fff;
+}
+.party{
+    position: absolute;
+    top: 115px;
+    left: 110px;
+    z-index: 1;
+}
+.view1{
+    position: absolute;
+    top: 20px;
+    right: 520px;
+    border-radius: 5px;
+}
+
+.view2{
+    position: absolute;
+    top: 280px;
+  
+    border-radius: 5px;
+}
+.view3{
+    position: absolute;
+    top: 280px;
+    right: 540px;
+    border-radius: 5px;
+}
+
+.video{
+    position: absolute;
+    top: 140px;
+    width:435px;
+    right: 80px;
+    border-radius: 5px;
+}
+
+#latest-footer{
+    position: relative;
+    text-align: center;
+    padding:18px;
+    background: #1d2026;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    bottom: -321px;
+}
